@@ -98,3 +98,15 @@ pip3 install opencv-python pyotp
 ## 流程二 — 選單列一鍵更新憑證
 
 > 待完成
+
+---
+
+## 後續還要做這些事 (TODO)
+
+- **開發 macOS 原生選單列 App (`AWSMenuBar`)**：
+  - 將 Swift 程式碼自動編譯並打包為 macOS `.app` 應用程式。
+  - 設定 `LSUIElement` 讓 App 於背景執行（僅顯示於選單列，不顯示於 Dock）。
+- **自動化安裝與啟動機制**：
+  - 透過 Shell Script 自動檢查 iTerm 環境並關閉舊版程序。
+  - 建立 `LaunchAgent` (`.plist`) 實現開機自動啟動與背景常駐。
+  - 啟動後自動將雲朵圖示 ☁️ 掛載於系統選單列。
